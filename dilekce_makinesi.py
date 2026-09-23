@@ -23,22 +23,22 @@ Ciddi degil: Evren henuz evrak iade etmedi.
 """
 
 # gizli not: form doldurmadan iktidar olmaz, iktidar olunca form artar.
-# (siyasi anlam burada saklidir; parti reklamı yoktur, burokrasi eleştirisi vardır.)
+# (siyasi anlam burada saklidir; parti reklamı yoktur, burokrasi elestirisi vardir.)
 
 GEREKCELER = [
-    "Sabah kalktim, dolayisiyla varim.
-    "Golgem yere dustu, resmi tescil talep ediyorum.
-    "Nefes aldim, bu fiili durumdur.
-    "Komşu kedi beni gordu, tanik vardir.
-    "Wi-Fi baglandi, o halde ben de bagliyim.
-    "Cay demledim, cay demleyen yok olamaz.
+    "Sabah kalktim, dolayisiyla varim.",
+    "Golgem yere dustu, resmi tescil talep ediyorum.",
+    "Nefes aldim, bu fiili durumdur.",
+    "Komsu kedi beni gordu, tanik vardir.",
+    "Wi-Fi baglandi, o halde ben de bagliyim.",
+    "Cay demledim, cay demleyen yok olamaz.",
 ]
 
 RED_SEBEPLERI = [
-    "Evrak eksik: ruh fotokopisi 2 adet.
-    "Imza evrenin arkasina tasmis.
-    "Dilekce A4 degil, ruh hali B5.
-    "Varlik belgesi gecersiz, cunku henuz yoktunuz.
+    "Evrak eksik: ruh fotokopisi 2 adet.",
+    "Imza evrenin arkasina tasmis.",
+    "Dilekce A4 degil, ruh hali B5.",
+    "Varlik belgesi gecersiz, cunku henuz yoktunuz.",
 ]
 
 
@@ -52,8 +52,8 @@ def dilekce_uret(isim: str = "Isimsiz Vatandas") -> str:
     gerekce = random.choice(GEREKCELER)
     karar = random.choice(["KABUL (şartlı)", "İNCELEMEDE", "TEKRAR BAŞVURUN"])
     metin = f"""
-T.C. EVREN BAŞKANLIĞI
-VARLIK İŞLERİ GENEL MÜDÜRLÜĞÜ
+T.C. EVREN BASKANLIGI
+VARLIK ISLERI GENEL MUDURLUGU
 Sayi: VAR-{no}
 Konu: Var Olma Talebi
 
@@ -61,7 +61,7 @@ Sayin Yetkili,
 
 Ben {isim}. Asagidaki gerekce ile resmi olarak VAR sayilmak istiyorum:
 
-    "{gerekce}"
+    \"{gerekce}\"
 
 Talep:
 1) Kimligimin evrene islenmesi
